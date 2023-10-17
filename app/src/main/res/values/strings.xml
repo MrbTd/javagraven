@@ -3,5 +3,6 @@
     <string name="welcome_mag">Ceci est une application test</string>
     <string name="points_mag">Points:0</string>
     <string name="btnname">Valider</string>
+    <string name="yes">Oui</string>
 
 </resources>

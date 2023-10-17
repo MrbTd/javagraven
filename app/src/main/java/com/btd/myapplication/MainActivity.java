@@ -52,24 +52,10 @@ public class MainActivity extends AppCompatActivity {
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    AlertDialog.Builder mypop=new AlertDialog.Builder(activity);
-                    mypop.setTitle("Salut");
-                    mypop.setMessage("Salut les genre c'est graven, bonne année 2018");
-                    mypop.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            Toast.makeText(activity, "Vous avez cliquez sur OUI", Toast.LENGTH_SHORT).show();
-                        }
-                    });
-
-                    mypop.setNegativeButton("Non", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            Toast.makeText(getApplicationContext(),"Vous avez cliquez sur Non",Toast.LENGTH_SHORT).show();
-                        }
-                    });
-
-                    mypop.show();
+                    CustomPopup customPopup=new CustomPopup(activity);
+                    customPopup.setTitle("Bonne année 2019");
+                    customPopup.setSubTitle("Abonnez vous c'est gratuit");
+                    customPopup.build();
                 }
             });
 
